@@ -1,7 +1,7 @@
 let redis = require('redis'),
     RDS_PORT = 6379,
     RDS_HOST = 'localhost',
-    RDS_OPTS = {auth_pass: 'lkkchen'},
+    RDS_OPTS = {auth_pass: ''},
     redisClient = redis.createClient(RDS_PORT,RDS_HOST,RDS_OPTS);
 
 redisClient.on('connect',function(){
